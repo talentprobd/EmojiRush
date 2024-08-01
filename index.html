@@ -36,31 +36,12 @@
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
 
-      
 
-      function SendBoolToFlutter(value) 
+      function CallExitFromUnity(value) 
       {
-        Print.postMessage("hello from emoji rush");
-
-        // Assuming you have a method to send data to Flutter
-        //if (typeof value !== 'boolean') 
-        //{
-          //console.error('Expected a boolean value.');
-          //return;
-        //}
-
-        //console.log("Data Recieved: "+value);
-        // Call the Dart function exposed to JavaScript
-        //if (window.receiveBoolFromJavaScript)
-        //{
-          //window.receiveBoolFromJavaScript(value);
-          
-        //} 
-        //else 
-        //{
-          //console.error('Flutter receiver function is not defined.');
-        //}
-      }
+        EMOJI_RUSH.postMessage("exit");
+        console.log("Data Recieved: "+ value);
+      }
 
     </script>
 
