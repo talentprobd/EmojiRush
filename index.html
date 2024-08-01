@@ -40,24 +40,26 @@
 
       function SendBoolToFlutter(value) 
       {
-        // Assuming you have a method to send data to Flutter
-        if (typeof value !== 'boolean') 
-        {
-          console.error('Expected a boolean value.');
-          return;
-        }
+        Print.postMessage("hello from emoji rush");
 
-        console.log("Data Recieved: "+value);
+        // Assuming you have a method to send data to Flutter
+        //if (typeof value !== 'boolean') 
+        //{
+          //console.error('Expected a boolean value.');
+          //return;
+        //}
+
+        //console.log("Data Recieved: "+value);
         // Call the Dart function exposed to JavaScript
-        if (window.receiveBoolFromJavaScript)
-        {
-          window.receiveBoolFromJavaScript(value);
+        //if (window.receiveBoolFromJavaScript)
+        //{
+          //window.receiveBoolFromJavaScript(value);
           
-        } 
-        else 
-        {
-          console.error('Flutter receiver function is not defined.');
-        }
+        //} 
+        //else 
+        //{
+          //console.error('Flutter receiver function is not defined.');
+        //}
       }
 
     </script>
